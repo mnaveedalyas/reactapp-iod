@@ -15,21 +15,33 @@ function App() {
 
   return (
     <div className="App">
-      <GreetingFunc />
+      
+
+      <PropsDisplayer myparameters={"hello"} />
+
+      <PropsDisplayer firstName={"mike"} lastName='Webb' age={22} address='hamilton' isworking={false} interests={['movies', 'games', 'dine outs']} />
+
+
       {/*
       
+ 
       <GreetingFunc />
+      <UserClass />
+      <UserFunction />
+
       <WelcomeClass />
-      <WelcomeParam FName="naveed" LName="alyas" />
+      <WelcomeParam FName="David" LName="alyas" />
+
       <WelcomeParamChildren FName="naveed" LName="alyas">
         <p>my testing paragraph in Welcome</p> <button>Add Me</button>
       </WelcomeParamChildren>
+      
+      
 
-      <UserClass />
+      
 
-      <UserFunction />
-      <PropsDisplayer myvalues={"hello"} />
-      <PropsDisplayer firstName={"mike"} lastName='Webb' age={22} address='hamilton' isworking={false} interests={['movies', 'games', 'dine outs']} />
+      
+      
       */}
     </div>
   );
