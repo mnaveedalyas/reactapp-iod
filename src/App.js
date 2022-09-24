@@ -1,23 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
 
+import WelcomeClass from './components/WelcomeClass';
+import WelcomeParam from './components/WelcomeParam';
+import WelcomeParamChildren from './components/WelcomeParamChildren';
+import GreetingFunc from './components/GreetingFunc';
+import UserClass from './components/UserClass';
+import UserFunction from './components/UserFunction';
+import PropsDisplayer from './components/PropsDisplayer';
+
 function App() {
+
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GreetingFunc />
+      {/*
+      
+      <GreetingFunc />
+      <WelcomeClass />
+      <WelcomeParam FName="naveed" LName="alyas" />
+      <WelcomeParamChildren FName="naveed" LName="alyas">
+        <p>my testing paragraph in Welcome</p> <button>Add Me</button>
+      </WelcomeParamChildren>
+
+      <UserClass />
+
+      <UserFunction />
+      <PropsDisplayer myvalues={"hello"} />
+      <PropsDisplayer firstName={"mike"} lastName='Webb' age={22} address='hamilton' isworking={false} interests={['movies', 'games', 'dine outs']} />
+      */}
     </div>
   );
 }
