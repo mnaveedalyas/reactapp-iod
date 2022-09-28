@@ -8,6 +8,10 @@ import GreetingFunc from './components/GreetingFunc';
 import UserClass from './components/UserClass';
 import UserFunction from './components/UserFunction';
 import PropsDisplayer from './components/PropsDisplayer';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
+import EventBinding from './components/EventBinding';
+import Counter from './components/Counter';
 
 function App() {
 
@@ -16,14 +20,23 @@ function App() {
   return (
     <div className="App">
       
+      
+      <FunctionClick />
+      <ClassClick />
+      
+      <EventBinding />
+
+      <Counter />
+      {/*
+      
+
+      <EventBinding />
+      <Counter />
 
       <PropsDisplayer myparameters={"hello"} />
 
       <PropsDisplayer firstName={"mike"} lastName='Webb' age={22} address='hamilton' isworking={false} interests={['movies', 'games', 'dine outs']} />
 
-
-      {/*
-      
  
       <GreetingFunc />
       <UserClass />
