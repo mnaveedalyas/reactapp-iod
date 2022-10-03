@@ -3,13 +3,13 @@ import React, { Component } from "react";
 class ClassClick extends Component {
 
     clickHandler(){
-        console.log("I am clicked")
+        console.log("I am clicked with class")
     }
 
     render(){
         return(
           <div>
-                <button onClick={this.clickHandler}> Click Me</button>
+                <button onClick={this.clickHandler}> Click - Class</button>
           </div>
         )
     }

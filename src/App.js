@@ -12,26 +12,33 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBinding from './components/EventBinding';
 import Counter from './components/Counter';
+import LifcycleA from './components/LifcycleA';
+import Clock from './components/Clock';
+import ClockWithLifeCycle from './components/ClockWithLifeCycle';
 
 function App() {
 
   
-
   return (
     <div className="App">
       
+
+      <ClockWithLifeCycle />
       
+      
+      
+      {/*
+
+      <ClockWithLifeCycle />
+      <Clock date={new Date()} />
       <FunctionClick />
       <ClassClick />
-      
+
+      <Clock />
+      <Counter />
       <EventBinding />
 
-      <Counter />
-      {/*
-      
-
-      <EventBinding />
-      <Counter />
+      <LifcycleA /> 
 
       <PropsDisplayer myparameters={"hello"} />
 
@@ -43,6 +50,7 @@ function App() {
       <UserFunction />
 
       <WelcomeClass />
+      <WelcomeParam FName="David" LName="alyas" />
       <WelcomeParam FName="David" LName="alyas" />
 
       <WelcomeParamChildren FName="naveed" LName="alyas">
