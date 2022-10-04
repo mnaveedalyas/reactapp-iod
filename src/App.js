@@ -15,19 +15,28 @@ import Counter from './components/Counter';
 import LifcycleA from './components/LifcycleA';
 import Clock from './components/Clock';
 import ClockWithLifeCycle from './components/ClockWithLifeCycle';
-
+import Reservation from './components/Reservation';
+import Form from './components/Form';
+import CodeSplitting from './components/CodeSplitting'
+import ErrorComponent from './components/ErrorComponent';
+import ErrorComponentBoundary from './components/ErrorComponentBoundary';
 function App() {
 
   
   return (
     <div className="App">
       
+      <ErrorComponentBoundary />
+      
+      
+      
 
-      <ClockWithLifeCycle />
-      
-      
-      
       {/*
+
+      <Reservation />
+      <Form />
+      <CodeSplitting />
+      <ErrorComponent />
 
       <ClockWithLifeCycle />
       <Clock date={new Date()} />
