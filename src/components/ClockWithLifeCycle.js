@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class ClockWithLifeCycle extends Component {
+class ClockWithLifeCycle extends Component {
 
   constructor(props){
     super(props);

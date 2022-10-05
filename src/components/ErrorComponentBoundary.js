@@ -2,11 +2,12 @@ import React, { Suspense } from 'react'
 import ErrorBoundary from './ErrorBoundaries';
 
 const ClockWithLifeCycle = React.lazy( () => import('./ClockWithLifeCycle') ) ;
+
 const GreetingFunc = React.lazy( () => {
     return new Promise(resolve => {
         setTimeout( () => {
             resolve( import('./GreetingFunc'));
-        }, 2000 );
+        }, 5000 );
     })
 } );
 
@@ -18,7 +19,7 @@ function ErrorComponentBoundary() {
             <Suspense fallback = { <div>Loading ..... </div>}>
                 <section>
                     <ClockWithLifeCycle />
-                    
+                    <GreetingFunc />
                 </section>
             </Suspense>
             <Suspense fallback = { <div>Loading ..... </div>}>

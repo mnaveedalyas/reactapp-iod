@@ -30,12 +30,7 @@ class Form extends Component {
         }
     }
     
-    ChangeName = event =>{
-        //console.log('event.target.value :'+event.target.value);
-        this.setState({
-            name : event.target.value
-        })
-    }
+    
     ChangeEmail = event =>{
         this.setState({
             email: event.target.value
@@ -60,19 +55,28 @@ class Form extends Component {
         event.preventDefault();
     }
 
-    
+
+    ChangeName = event =>{
+        console.log('event.target.value :'+event.target.value);     
+        this.setState({
+            name : event.target.value
+        })
+    }
+
     render(){
-        let {name, email, comments, topic } = this.state;
+        let {name, email, comments, topic } =  this.state; 
+
         return(
             <StyledDiv>
                 <form onSubmit={this.SubmitForm}>
                 <h2>my testing form</h2>
                 <TextInput>
+
                     <label>Name</label>
                     <input 
                         type='text' 
                         value={name} 
-                        onChange= {this.ChangeName} />
+                        onChange= {this.ChangeName}/>
                 </TextInput> 
                 <TextInput>
                     <label>Email</label>

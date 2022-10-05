@@ -26,17 +26,23 @@ function App() {
   return (
     <div className="App">
       
+      
+      
+      
+      <Form />
+
       <ErrorComponentBoundary />
       
-      
-      
-
       {/*
 
       <Reservation />
       <Form />
       <CodeSplitting />
       <ErrorComponent />
+
+
+      <ErrorComponentBoundary />
+
 
       <ClockWithLifeCycle />
       <Clock date={new Date()} />
