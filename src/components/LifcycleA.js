@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import LifecycleB from './LifecycleB';
 class LifcycleA extends Component {
+
+  
     constructor(props) {
       super(props)
     
@@ -38,6 +40,7 @@ class LifcycleA extends Component {
     componentDidUpdate(){
       console.log("calling componentDidUpdate A")
     }
+
 
     changeState = () =>{
       this.setState({

@@ -20,18 +20,6 @@ class Counter extends Component {
  };
 
 
- incrementFive(){
-    this.incrementCounter();
-    this.incrementCounter();
-    this.incrementCounter();
-    this.incrementCounter();
-    this.incrementCounter();
-    
- }
-
-
-
-
  render(){
     return( 
     <div>

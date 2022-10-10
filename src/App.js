@@ -20,20 +20,35 @@ import Form from './components/Form';
 import CodeSplitting from './components/CodeSplitting'
 import ErrorComponent from './components/ErrorComponent';
 import ErrorComponentBoundary from './components/ErrorComponentBoundary';
+
+import HookUseState from './components/HookUseState';
+import HookCompLifeCycle from './components/HookCompLifeCycle';
+import HookUseEffect from './components/HookUseEffect';
+import HookContextProvider from './components/HookContextProvider';
+import ContextProviderExample from './components/ContextProviderExample'
+
 function App() {
 
   
   return (
     <div className="App">
       
-      
-      
-      
-      <Form />
+      <HookUseEffect />
 
-      <ErrorComponentBoundary />
-      
       {/*
+
+      <HookUseState />
+      <Counter />
+
+      <ContextProviderExample />
+      <HookCompLifeCycle />
+      <HookUseEffect />
+
+      <HookContextProvider />
+      <ContextProviderExample />
+
+      <Form />
+      <ErrorComponentBoundary />
 
       <Reservation />
       <Form />
