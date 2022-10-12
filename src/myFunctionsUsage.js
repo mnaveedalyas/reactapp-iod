@@ -9,4 +9,4 @@ let sumresult = myfunc.getSum(a, b);
 console.log('sum of '+ a +' and '+ b + ' is : '+sumresult);
 
 let mulresult = myfunc.getMultiply(a, b);
-console.log('sum of '+ a +' and '+ b + ' is : '+mulresult);
+console.log('Multiplication of '+ a +' and '+ b + ' is : '+mulresult);
