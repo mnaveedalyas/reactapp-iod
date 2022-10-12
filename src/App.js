@@ -33,10 +33,11 @@ function App() {
   return (
     <div className="App">
       
-      <HookUseEffect />
+      <ContextProviderExample />
 
       {/*
 
+      <HookUseEffect />
       <HookUseState />
       <Counter />
 
