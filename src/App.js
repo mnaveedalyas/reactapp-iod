@@ -26,6 +26,15 @@ import HookCompLifeCycle from './components/HookCompLifeCycle';
 import HookUseEffect from './components/HookUseEffect';
 import HookContextProvider from './components/HookContextProvider';
 import ContextProviderExample from './components/ContextProviderExample'
+import RouteExample from './components/routing/RouteExample';
+import SignIn from './components/MUI/SignIn';
+import MUIButton from './components/MUI/MUIButton';
+import HookUseRef from './components/HookUseRef';
+import Parent from './components/Portal/PortalExmple';
+import ParentPortal from './components/Portal/ParentPortal';
+import CustomTextInput from './components/Ref/CustomTextInput';
+import NameForm from './components/UncontrolledComp/NameForm';
+import FileInput from './components/UncontrolledComp/FileInput';
 
 function App() {
 
@@ -33,9 +42,21 @@ function App() {
   return (
     <div className="App">
       
-      <ContextProviderExample />
+      <FileInput />
 
       {/*
+
+      <RouteExample />
+      <SignIn />
+      <MUIButton />
+      <HookUseRef />
+      <Parent />
+      <ParentPortal />
+      <CustomTextInput />
+      <NameForm />
+
+      <HookContextProvider />
+      <ContextProviderExample />
 
       <HookUseEffect />
       <HookUseState />
