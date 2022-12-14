@@ -5,7 +5,7 @@ export default function Home () {
         <p>This is testing interface for React Routing </p>
 
         <p>Please use above menu to navigate through application</p>
-       </div>
+      </div>
     );
   };
   

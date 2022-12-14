@@ -34,6 +34,7 @@ const AppMenu = () => {
 function AppMenu (){
   return (
     <>
+      
       <nav >
         <ul>
           <li>
@@ -72,6 +73,7 @@ function AppMenu (){
       </nav>
 
       <Outlet />
+      
     </>
   )
 }

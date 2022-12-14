@@ -42,10 +42,12 @@ function App() {
   return (
     <div className="App">
       
-      <FileInput />
-
+      
+      <RouteExample />
+      
       {/*
-
+      <NameForm />
+      <Form />
       <RouteExample />
       <SignIn />
       <MUIButton />
@@ -53,6 +55,8 @@ function App() {
       <Parent />
       <ParentPortal />
       <CustomTextInput />
+      <NameForm />
+      <FileInput />
       <NameForm />
 
       <HookContextProvider />
