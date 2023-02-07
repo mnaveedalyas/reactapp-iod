@@ -15,3 +15,4 @@ export default function UserFunction() {
     <div>Hi, <b> { greetUser(User) } !</b> Welcome to world of react</div>
   )
 }
+

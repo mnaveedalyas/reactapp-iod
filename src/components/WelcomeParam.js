@@ -11,8 +11,6 @@ class WelcomeParam extends Component{
         return(
             <div>
                 <h1>{FName} {LName}! Welcome to React World - Class Component</h1>
-
-                <h1>{FName1} {LName1}! Welcome to React World - Class Component</h1>
             </div>
         ) 
 

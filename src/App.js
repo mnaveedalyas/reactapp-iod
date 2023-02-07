@@ -35,6 +35,7 @@ import ParentPortal from './components/Portal/ParentPortal';
 import CustomTextInput from './components/Ref/CustomTextInput';
 import NameForm from './components/UncontrolledComp/NameForm';
 import FileInput from './components/UncontrolledComp/FileInput';
+import SetStateExample from './components/setState';
 
 function App() {
 
@@ -42,10 +43,42 @@ function App() {
   return (
     <div className="App">
       
+      <PropsDisplayer welcomeNote="hello" name="Naveed" />
       
+      <PropsDisplayer firstName={"mike"} lastName='Webb' age={22} address='hamilton' isworking={false} interests={['movies', 'games', 'dine outs']} />
+
+      {
+      /*
+      slide 11
+      <UserClass />
+      <UserFunction />
+      
+      <GreetingFunc />  
+      <UserClass />
+      <UserFunction />
+
+
+      // slide 20 props
+        <PropsDisplayer myparameters={"hello"} />
+
+      // slide 21
+        <PropsDisplayer firstName={"mike"} lastName='Webb' age={22} address='hamilton' isworking={false} interests={['movies', 'games', 'dine outs']} />
+
+      // slide 25-26
+      <WelcomeClass />
+      <GreetingFunc />   
+      
+      //slide 28 - 30
+      <WelcomeParam FName="David" LName="alyas" />
+
+      <WelcomeParamChildren FName="naveed" LName="alyas">
+        <p>my testing paragraph in Welcome</p> <button>Add Me</button>
+      </WelcomeParamChildren>
+
+      
+      <SetStateExample />
+
       <RouteExample />
-      
-      {/*
       <NameForm />
       <Form />
       <RouteExample />
@@ -96,22 +129,7 @@ function App() {
 
       <LifcycleA /> 
 
-      <PropsDisplayer myparameters={"hello"} />
-
-      <PropsDisplayer firstName={"mike"} lastName='Webb' age={22} address='hamilton' isworking={false} interests={['movies', 'games', 'dine outs']} />
-
- 
-      <GreetingFunc />
-      <UserClass />
-      <UserFunction />
-
-      <WelcomeClass />
-      <WelcomeParam FName="David" LName="alyas" />
-      <WelcomeParam FName="David" LName="alyas" />
-
-      <WelcomeParamChildren FName="naveed" LName="alyas">
-        <p>my testing paragraph in Welcome</p> <button>Add Me</button>
-      </WelcomeParamChildren>
+      
       
       
 
