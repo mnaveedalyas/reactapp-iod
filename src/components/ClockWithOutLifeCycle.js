@@ -1,6 +1,7 @@
 import React from 'react'
 
 function tick(props){
+    
     return (
         <div>
             <h1>Hello World!</h1>
@@ -10,10 +11,13 @@ function tick(props){
 }
 
 
-export default function Clock(props) {
+export default function ClockWithOutLifeCycle(props) {
    return (
     tick(props)
   )
 }
+
+//setInterval(tick, 1000);
+
 
 

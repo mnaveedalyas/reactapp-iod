@@ -13,7 +13,7 @@ import ClassClick from './components/ClassClick';
 import EventBinding from './components/EventBinding';
 import Counter from './components/Counter';
 import LifcycleA from './components/LifcycleA';
-import Clock from './components/Clock';
+import ClockWithOutLifeCycle from './components/ClockWithOutLifeCycle';
 import ClockWithLifeCycle from './components/ClockWithLifeCycle';
 import Reservation from './components/Reservation';
 import Form from './components/Form';
@@ -35,7 +35,7 @@ import ParentPortal from './components/Portal/ParentPortal';
 import CustomTextInput from './components/Ref/CustomTextInput';
 import NameForm from './components/UncontrolledComp/NameForm';
 import FileInput from './components/UncontrolledComp/FileInput';
-import SetStateExample from './components/setState';
+import LiftingUpState from './LiftingUpState';
 
 function App() {
 
@@ -43,9 +43,17 @@ function App() {
   return (
     <div className="App">
       
-      <PropsDisplayer welcomeNote="hello" name="Naveed" />
       
-      <PropsDisplayer firstName={"mike"} lastName='Webb' age={22} address='hamilton' isworking={false} interests={['movies', 'games', 'dine outs']} />
+      
+
+
+      <Counter />
+
+
+
+      
+
+      
 
       {
       /*
@@ -74,9 +82,27 @@ function App() {
       <WelcomeParamChildren FName="naveed" LName="alyas">
         <p>my testing paragraph in Welcome</p> <button>Add Me</button>
       </WelcomeParamChildren>
+      
+      // Slide 35 - 42 setState
+      <FunctionClick />
+      <ClassClick />
+      <EventBinding />
+      <Counter />
+      
+      //Slide 43 - lifting update state
+      <LiftingUpState />
+
+      // Slide 45 - 50
+      <LifcycleA />
+
+      //Slide 51
+      <ClockWithOutLifeCycle date = {new Date()} />
+      //Slide 52
+      <ClockWithLifeCycle />
+        <ClockWithLifeCycle />
+
 
       
-      <SetStateExample />
 
       <RouteExample />
       <NameForm />
@@ -97,7 +123,7 @@ function App() {
 
       <HookUseEffect />
       <HookUseState />
-      <Counter />
+      
 
       <ContextProviderExample />
       <HookCompLifeCycle />
@@ -114,20 +140,12 @@ function App() {
       <CodeSplitting />
       <ErrorComponent />
 
-
       <ErrorComponentBoundary />
 
 
-      <ClockWithLifeCycle />
-      <Clock date={new Date()} />
-      <FunctionClick />
-      <ClassClick />
 
-      <Clock />
-      <Counter />
-      <EventBinding />
 
-      <LifcycleA /> 
+      
 
       
       

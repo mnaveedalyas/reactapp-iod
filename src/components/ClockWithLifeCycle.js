@@ -28,3 +28,5 @@ class ClockWithLifeCycle extends Component {
     )
   }
 }
+
+export default ClockWithLifeCycle;
