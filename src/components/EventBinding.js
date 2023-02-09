@@ -18,6 +18,8 @@ class EventBinding extends Component {
     }
 
     clickHandler = () => {
+        this.setState( { message : this.state.message === 'Welcome' ? 'Good Bye': 'Welcome' } );
+        /*
         this.setState( 
             (prevState) => (
                 {
@@ -28,6 +30,7 @@ class EventBinding extends Component {
                 console.log("this.state.message :"+this.state.message);
             }
         )
+        */
     }
 
     

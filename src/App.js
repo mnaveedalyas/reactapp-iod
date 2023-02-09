@@ -44,7 +44,7 @@ function App() {
     <div className="App">
       
       
-      
+      <EventBinding />
 
 
       <Counter />
