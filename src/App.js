@@ -129,7 +129,7 @@ function App() {
       //slide 73 / 81
       <CodeSplitting />
 
-      //Slide 82
+      //Slide 82 - error boudary and lazy loadging
       <ErrorComponentBoundary />
       <ErrorComponent />  
 

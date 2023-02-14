@@ -1,5 +1,7 @@
 import React, { Suspense } from 'react'
 import ErrorBoundary from './ErrorBoundaries';
+import ErrorComponent from './ErrorComponent';
+import BuggyCounter from './BuggyCounter';
 
 const ClockWithLifeCycle = React.lazy( () => import('./ClockWithLifeCycle') ) ;
 
@@ -19,6 +21,7 @@ function ErrorComponentBoundary() {
             <Suspense fallback = { <div>Loading ..... </div>}>
                 <section>
                     <ClockWithLifeCycle />
+                    <BuggyCounter />
                 </section>
             </Suspense>
             <Suspense fallback = { <div>Loading ..... </div>}>

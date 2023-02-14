@@ -3,7 +3,9 @@ import React from 'react'
 class ErrorComponent extends React.Component {
     constructor(props) {
       super(props);
-      this.state = { error: null };
+      this.state = { 
+        error: null 
+      };
       this.handleClick = this.handleClick.bind(this);
     }
   
