@@ -7,7 +7,7 @@ const GreetingFunc = React.lazy( () => {
     return new Promise(resolve => {
         setTimeout( () => {
             resolve( import('./GreetingFunc'));
-        }, 5000 );
+        }, 10000 );
     })
 } );
 
@@ -19,7 +19,6 @@ function ErrorComponentBoundary() {
             <Suspense fallback = { <div>Loading ..... </div>}>
                 <section>
                     <ClockWithLifeCycle />
-                    <GreetingFunc />
                 </section>
             </Suspense>
             <Suspense fallback = { <div>Loading ..... </div>}>

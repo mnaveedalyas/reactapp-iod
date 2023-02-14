@@ -30,10 +30,12 @@ class Form extends Component {
         }
     }
     
+   
     
     ChangeEmail = event =>{
+        
         this.setState({
-            email: event.target.value
+           email: event.target.value
         })
     }
 
@@ -51,16 +53,16 @@ class Form extends Component {
 
     SubmitForm = event =>{
         alert (`${this.state.name} ${this.state.email} ${this.state.comments} ${this.state.topic}`);
-
         event.preventDefault();
     }
 
-
     ChangeName = event =>{
         console.log('event.target.value :'+event.target.value);     
+        
         this.setState({
             name : event.target.value
         })
+        
     }
 
     render(){
@@ -71,7 +73,7 @@ class Form extends Component {
                 <form onSubmit={this.SubmitForm}>
                 <h2>my testing form</h2>
                 <TextInput>
-
+            
                     <label>Name</label>
                     <input 
                         type='text' 

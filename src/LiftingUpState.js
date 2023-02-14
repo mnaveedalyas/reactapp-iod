@@ -11,11 +11,9 @@ export default function LiftingUpState() {
         </div>
     );
 }
-
 function TodoCount({ todos }) {
   return <div>Total Todos: {todos.length} </div>;
 }
-
 function TodoList({ todos }) {
   //const [todos, setTodos] = React.useState(["item 1", "item 2", "item 3"]);
 
@@ -27,20 +25,20 @@ function TodoList({ todos }) {
     </ul>
   );
 }
-
-function AddTodo({ setTodos }) {
-  
+function AddTodo({ setTodos }) { 
     function handleSubmit(event) {
         event.preventDefault();
         const todo = event.target.elements.todo.value;
         console.log(todo);
+        console.log('name' + event.target.elements.todoname.value);
         setTodos(prevTodos => [...prevTodos, todo]);
     }
 
     return (
         <form onSubmit={handleSubmit}>
-        <input type="text" id="todo" />
-        <button type="submit">Add Todo</button>
+                <input type="text" id="todo" />
+                <input type="text" id="todoname" />
+                <button type="submit">Add Todo</button>
         </form>
     );
 }

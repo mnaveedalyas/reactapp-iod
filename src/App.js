@@ -37,6 +37,9 @@ import NameForm from './components/UncontrolledComp/NameForm';
 import FileInput from './components/UncontrolledComp/FileInput';
 import LiftingUpState from './LiftingUpState';
 
+import WelcomeDialog from './components/Composition';
+import SplitPanInterface from './components/SplitPan';
+
 function App() {
 
   
@@ -44,19 +47,31 @@ function App() {
     <div className="App">
       
       
-      <EventBinding />
-
-
-      <Counter />
-
-
-
-      
-
-      
+      <ErrorComponentBoundary />
+    
 
       {
       /*
+
+      <WelcomeDialog />
+      <SplitPanInterface />
+      <Reservation />
+      <NameForm />
+
+        <ClockWithOutLifeCycle date = {new Date()} />
+      
+      <ClockWithLifeCycle />
+
+      <Reservation />
+      <NameForm />
+
+      <CodeSplitting />
+
+      <ErrorComponentBoundary />
+      <ErrorComponent />  
+
+      <RouteExample />
+
       slide 11
       <UserClass />
       <UserFunction />
@@ -99,13 +114,29 @@ function App() {
       <ClockWithOutLifeCycle date = {new Date()} />
       //Slide 52
       <ClockWithLifeCycle />
-        <ClockWithLifeCycle />
-
-
       
+      //Slide 53
+      <Form />  
+      //slide 63
+      <NameForm />
+
+      //slide 64
+      <Reservation />
+      // Slide 65 - Composition
+      <WelcomeDialog />
+      <SplitPanInterface />
+
+      //slide 73 / 81
+      <CodeSplitting />
+
+      //Slide 82
+      <ErrorComponentBoundary />
+      <ErrorComponent />  
+
+
 
       <RouteExample />
-      <NameForm />
+      
       <Form />
       <RouteExample />
       <SignIn />
@@ -132,15 +163,10 @@ function App() {
       <HookContextProvider />
       <ContextProviderExample />
 
-      <Form />
-      <ErrorComponentBoundary />
+      
+      
 
-      <Reservation />
-      <Form />
-      <CodeSplitting />
-      <ErrorComponent />
 
-      <ErrorComponentBoundary />
 
 
 
