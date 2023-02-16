@@ -47,11 +47,20 @@ function App() {
     <div className="App">
       
       
-      <ErrorComponentBoundary />
-    
+      <HookCompLifeCycle />
+
+      
+      <HookUseEffect />
+
+      
+      
+      
 
       {
       /*
+      
+
+      <HookUseState />
 
       <WelcomeDialog />
       <SplitPanInterface />
@@ -135,7 +144,7 @@ function App() {
 
 
 
-      <RouteExample />
+     
       
       <Form />
       <RouteExample />
@@ -149,19 +158,25 @@ function App() {
       <FileInput />
       <NameForm />
 
-      <HookContextProvider />
-      <ContextProviderExample />
-
-      <HookUseEffect />
+      
+      // Mod 7 Slide 6
       <HookUseState />
+      <HookCompLifeCycle />
+
+      // Mod 7 Slide 8-13
+      <HookUseEffect />
+      
       
 
-      <ContextProviderExample />
-      <HookCompLifeCycle />
-      <HookUseEffect />
-
       <HookContextProvider />
       <ContextProviderExample />
+      
+      
+
+  
+      
+     
+
 
       
       

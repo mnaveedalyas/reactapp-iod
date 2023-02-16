@@ -5,7 +5,9 @@ function HookUseEffect() {
     const [count, setCount ] = useState(0);
 
     useEffect( () => {
-        document.title = `You clicked ${count} times`;
+        
+        document.title = `You clicked ${count} times - useEffect is called`;
+        console.log(document.title);
         document.getElementById("myMsg").innerHTML = `You have clicked ${count} times`;
     })
 
