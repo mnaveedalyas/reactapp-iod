@@ -25,7 +25,7 @@ import HookUseState from './components/HookUseState';
 import HookCompLifeCycle from './components/HookCompLifeCycle';
 import HookUseEffect from './components/HookUseEffect';
 import HookContextProvider from './components/HookContextProvider';
-import ContextProviderExample from './components/ContextProviderExample'
+import ContextProviderExample from './components/contexts/ContextProviderExample'
 import RouteExample from './components/routing/RouteExample';
 import SignIn from './components/MUI/SignIn';
 import MUIButton from './components/MUI/MUIButton';
@@ -39,6 +39,8 @@ import LiftingUpState from './LiftingUpState';
 
 import WelcomeDialog from './components/Composition';
 import SplitPanInterface from './components/SplitPan';
+import OutletExample from './components/routing/outletExample';
+import NavigateExample from './components/routing/NavigateExample';
 
 function App() {
 
@@ -47,20 +49,26 @@ function App() {
     <div className="App">
       
       
-      <HookCompLifeCycle />
 
-      
-      <HookUseEffect />
-
+      <CustomTextInput />
       
       
       
 
       {
       /*
+      <RouteExample/> 
+
+      
+      <OutletExample/>
+      <ContextProviderExample />
+       <HookContextProvider />
+
       
 
       <HookUseState />
+      <HookCompLifeCycle />
+      <HookUseEffect />
 
       <WelcomeDialog />
       <SplitPanInterface />
@@ -147,13 +155,12 @@ function App() {
      
       
       <Form />
-      <RouteExample />
-      <SignIn />
-      <MUIButton />
+      
       <HookUseRef />
       <Parent />
       <ParentPortal />
-      <CustomTextInput />
+       
+      
       <NameForm />
       <FileInput />
       <NameForm />
@@ -167,16 +174,24 @@ function App() {
       <HookUseEffect />
       
       
-
+      //Mod 7 Slide 20 - 32
       <HookContextProvider />
       <ContextProviderExample />
       
+      //Mod 7 Slide 34 - 45
+      <RouteExample />
+      //Mod 7 Slide 41
+      <NavigateExample />
+      //Mod 7 Slide 42
+      <OutletExample/>
       
+      //mod 7 slide 51-51
+      <SignIn />
+      <MUIButton />
 
-  
+      //mod 7 slide 62 
+      <CustomTextInput />
       
-     
-
 
       
       

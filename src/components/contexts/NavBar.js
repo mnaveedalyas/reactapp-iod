@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { ThemeConsumer } from 'styled-components'
-import { ThemeContext } from './contexts/ThemeContext'
+import { ThemeContext } from './ThemeContext'
 
 export default class NavBar extends Component {
     

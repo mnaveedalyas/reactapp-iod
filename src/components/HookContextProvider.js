@@ -1,31 +1,29 @@
 import React, { createContext, useContext } from 'react'
 
-const moods = { happy: 'Happy', sad: 'sad'}  
-const MoodContext = createContext(moods);
-
+const moodsList = { happy: 'Happy Test', sad: 'sad Test'}  
+const MoodContext = createContext(moodsList);
+MoodContext.displayName = 'My Context Display Name';
 export default function HookContextProvider() {
   return (
     <div>
         <h1>HookContextProvider</h1>
-        <MoodContext.Provider value={moods.happy}>
-            <MoodHappyUseContext />
-            <MoodHappy />
+        <MoodContext.Provider value={moodsList.happy}>
+            <MoodWithUseContext />
+            <MoodWithConsumer />
         </MoodContext.Provider>
 
-        <MoodContext.Provider value={moods.sad}>
-            <MoodHappy />
+        <MoodContext.Provider value={moodsList.sad}>
+            <MoodWithConsumer />
         </MoodContext.Provider>
     </div>
-  )
-};
-
-function MoodHappyUseContext() {
-
+)};
+function MoodWithUseContext() {
+    console.log('MoodContext.displayName: ', MoodContext.displayName);
     const mood = useContext(MoodContext);
     return <p> My Mood with useContext : {mood}</p>;
 }
-
-function MoodHappy() {
+function MoodWithConsumer() {
+    console.log('MoodContext.displayName: ', MoodContext.displayName);
     return (
         <MoodContext.Consumer>{ (mood) =>{
                     return <p>my mood with MoodContext.Consumer : {mood}</p>

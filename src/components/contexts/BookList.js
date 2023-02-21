@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { ThemeContext } from './contexts/ThemeContext'
+import { ThemeContext } from './ThemeContext'
 
 export default class BookList extends Component {
     static contextType = ThemeContext;

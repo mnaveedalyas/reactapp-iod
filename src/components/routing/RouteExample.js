@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from './Contact';
-import ContextProviderExample from '../ContextProviderExample';
+import ContextProviderExample from '../contexts/ContextProviderExample';
 import Home from './Home';
 import HookUseState from '../HookUseState';
 import AppMenu from './AppMenu';
@@ -25,12 +25,9 @@ export default function RouteExample() {
               <Route path="login" element={<LoginForm />} />
               <Route path="successmessage" element={<SuccessMessage />} />
               <Route path="failuremessage" element={<FailureMessage />} />
-
               <Route path="muibutton" element={<MUIButton />} />
               <Route path="muisignin" element={<SignIn />} />
               <Route path="muicard" element={<MUICard />} />
-              
-
               <Route path="*" element={<NoPage />} />
             </Route>
           </Routes>
