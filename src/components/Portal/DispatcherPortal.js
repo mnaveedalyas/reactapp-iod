@@ -1,5 +1,6 @@
 // These two containers are siblings in the DOM
-import React, { Component }  from "react";
+
+import React, { Component, StrictMode }  from "react";
 import ReactDOM from "react-dom";
 
 const portalRoot = document.getElementById('portal-root');

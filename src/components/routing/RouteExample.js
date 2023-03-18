@@ -25,7 +25,7 @@ export default function RouteExample() {
               <Route path="login" element={<LoginForm />} />
               <Route path="successmessage" element={<SuccessMessage />} />
               <Route path="failuremessage" element={<FailureMessage />} />
-              <Route path="muibutton" element={<MUIButton />} />
+              <Route path="muibutton" element={<MUIButton name='Test' type='Test Type'/>} />
               <Route path="muisignin" element={<SignIn />} />
               <Route path="muicard" element={<MUICard />} />
               <Route path="*" element={<NoPage />} />

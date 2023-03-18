@@ -6,7 +6,7 @@ function ChildPortal() {
   // The click event on this button will bubble up to parent,
   // because there is no 'onClick' attribute defined
   return (
-    <div className="modal">
+    <div className="modal" float="center">
       <button>Click</button>
     </div>
   );

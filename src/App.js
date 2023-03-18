@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -47,19 +48,17 @@ function App() {
   
   return (
     <div className="App">
+      <React.StrictMode>
+        <RouteExample />
+      </React.StrictMode>
       
       
-
-      <CustomTextInput />
       
-      
-      
-
       {
       /*
       <RouteExample/> 
 
-      
+
       <OutletExample/>
       <ContextProviderExample />
        <HookContextProvider />

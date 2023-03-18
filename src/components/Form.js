@@ -77,9 +77,13 @@ class Form extends Component {
                     <label>Name</label>
                     <input 
                         type='text' 
-                        value={name} 
+                        value={name}
+                        defaultValue={'default test'}
                         onChange= {this.ChangeName}/>
                 </TextInput> 
+
+                
+
                 <TextInput>
                     <label>Email</label>
                     <input 
